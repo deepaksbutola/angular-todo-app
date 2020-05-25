@@ -1,0 +1,7 @@
+<div class="mt-5 ml-3">
+    <label>Task name:
+        <input #taskName/>
+    </label>
+    <button (click)="add(taskName.value)" class="ml-3 btn btn-primary btn-sm">Add</button>
+    <app-todo-list [tasklist]="taskList"></app-todo-list>
+</div>
